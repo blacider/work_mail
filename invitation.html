@@ -5,12 +5,43 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
 	<title>HTML Email编写指南</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+	<style type="text/css">
+         /* Client-specific Styles */
+         #outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+         body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+         /* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+         span a {color:#FF575B;text-decoration: none;}
+         /*STYLES*/
+
+         /*IPHONE STYLES*/
+      @media only screen and (max-width: 480px) {
+
+         table[class=devicewidth] {width: 320px!important;text-align:center!important;}
+         
+          
+         
+          /* Main Image Mobile Swap */
+         span[id=switcher] {
+            display:block;
+            background-image: url(http://me.niurenpeng.com/images/img-m.png) !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            background-size: 320px 93px;
+            width: 320px !important;
+            height: 93px !important;
+         }
+         img[id=houdini] {display: none !important;}
+}
+	</style>
 </head>  
 <body style="margin: 0; padding: 0;    font-family: PingFang SC;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#f0f1f4" style="border-collapse: collapse; font-family: Helvetica; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(240, 241, 244); margin: 0px auto;" class="">
+<tr>
+	<td>
   	<table bgcolor="#F2F2F2" border="0" cellpadding="0" cellspacing="0" width="100%">
     	<tr>
         	<td>
-				<table bgcolor="white" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+				<table class="devicewidth" bgcolor="white" align="center" border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse;">
     				<tr>
         				<td>
             				<img src="http://me.niurenpeng.com/images/bar.png" alt="imgtop" width="100%" height="auto" style="display: block;" />
@@ -18,7 +49,9 @@
     				</tr>
     				<tr>
         				<td>
-            				<img src="http://me.niurenpeng.com/images/img.png" alt="imgtop" width="100%" height="auto" style="display: block;" />
+        					<span id="switcher">
+            					<img id="houdini" src="http://me.niurenpeng.com/images/img.png" alt="imgtop" width="100%" height="auto" style="display: block;" />
+            				</span>
         				</td>
     				</tr>
     				<tr>
@@ -33,7 +66,7 @@
     				</tr>
     				<tr>
     					<td  align="center" style="padding-top:10px;padding-right:auto;padding-bottom:40px;padding-left:auto;font-size:10px">
-    						请下载云报销APP, 并使用邮箱 <span style="color:red">lin.yang@yunbaoxiao.com</span> 进行登录。
+    						请下载云报销APP, 并使用邮箱 <span style="color:#FF575B">lin.yang@yunbaoxiao.com</span> 进行登录。
     					</td>
     				</tr>
     				<tr>
@@ -44,27 +77,33 @@
     					</td>
     				</tr>
     				<tr>
-    					<td style="text-align:center;padding-top:40px;padding-right:auto;padding-bottom:40px;padding-left:auto;font-size:10px;">
+    					<td style="text-align:center;padding-top:40px;padding-right:auto;padding-bottom:15px;padding-left:auto;font-size:10px;">
     						你也可以访问云报销网站进行登录。
     					</td>
     				</tr>
     				<tr>
-    					<td align="center" style="height:45px;center;padding-top:0px;padding-right:auto;padding-bottom:0px;padding-left:auto;">
+    					<td align="center" style="height:95px;center;padding-top:0px;padding-right:auto;padding-bottom:0px;padding-left:auto;">
     						<a href="https://admin.cloudbaoxiao.com/login" style="text-decoration:none;">
     							<img src="http://me.niurenpeng.com/images/visitButton.png" alt="imgtop" width="250px" height="45px" style="display: block;" />
     						</a>
     					</td>
     				</tr>
     				<tr>
-    					<td  align="center" style="padding-top:60px;padding-right:auto;padding-bottom:0px;padding-left:auto;font-size:10px">
-    						如果你错误地收到此邮件，请发邮件至 <span style="color:red">service@yunbaoxiao.com</span> 告诉我们。<br/><br/>
+    					<td  align="center" style="padding-top:35px;padding-right:auto;padding-bottom:0px;padding-left:auto;font-size:10px;border-top: 1px dotted #d8d8da; border-bottom-style: solid;border-bottom-width: 3px;    border-bottom-color: #d8d8da;">
+    						如果你错误地收到此邮件，请发邮件至 <span style="color:#FF575B">service@yunbaoxiao.com</span> 告诉我们。<br/><br/>
     						Thank You,<br/><br/>
-							云报销团队<br/>
+							云报销团队<br/><br/>
     					</td>
     				</tr>
 				</table>
+				<br/>
+				<br/>
+				<br/>
 			</td>
 		</tr>
+	</table>
+	</td>
+	</tr>
 	</table>
 </body>
 
