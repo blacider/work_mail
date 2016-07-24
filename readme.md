@@ -1,2 +1,1 @@
-布局使用的 table 布局，因为 html 邮件为了兼容各个收信客户端，必须使用 table。
-按钮用图片是为了在邮件中有阴影和圆角。
+What has come into being in him was life, and the life was the light of all people. The light shines in the darkness, and the darkness did not overcome it.

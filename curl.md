@@ -1,1 +1,0 @@
-curl -d 'api_user=console&api_key=wT1LkWcKAFHVagpz&from=www@console.yunbaoxiao.com&template_invoke_name=invitation' --data-urlencode 'substitution_vars={"to": ["niurenpeng@niurenpeng.com"],"sub":{"%email%": ["niurenpeng@niurenpeng.com"],"%group_name%":["如数公司"],"%friend%":["Friend"]}}' http://sendcloud.sohu.com/webapi/mail.send_template.json
